@@ -77,6 +77,10 @@ body {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  body {
+    overflow-y: scroll;
+  }
+
   #main-container {
     background: -webkit-linear-gradient(top, #005bea, #00c6fb);
     background: -o-linear-gradient(top, #005bea, #00c6fb);
@@ -84,6 +88,7 @@ body {
     background: linear-gradient(top, #005bea, #00c6fb);
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
   }
 
   #main-container #left-container {
