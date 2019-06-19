@@ -1,0 +1,78 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#main-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #005bea;
+  background: -webkit-linear-gradient(left, #005bea, #00c6fb);
+  background: -o-linear-gradient(left, #005bea, #00c6fb);
+  background: -moz-linear-gradient(left, #005bea, #00c6fb);
+  background: linear-gradient(left, #005bea, #00c6fb);
+  display: flex;
+  flex-direction: row;
+}
+
+#main-container #left-container {
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+}
+
+#main-container #left-container .logo {
+  cursor: pointer;
+}
+
+#main-container #left-container #main-logo {
+  height: 125px;
+  width: 375px;
+  margin: 20px 0px 0px 75px;
+}
+
+#main-container #left-container #description {
+  font-family: sans-serif;
+  color: white;
+  margin-left: 80px;
+}
+
+#main-container #left-container #btn-container {
+  margin: 75px 0px 0px 75px;
+}
+
+#main-container #left-container #btn-container .button {
+  margin-right: 10px;
+  cursor: pointer;
+  height: 40px;
+  background: none;
+  font-size: 15px;
+  color: white;
+  min-width: 100px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+#main-container #left-container #btn-container .button:hover {
+  background-color: white;
+  color: #005bea;
+}
+
+#main-container #left-container #kssbro-logo {
+  margin: 150px 0px 0px 75px;
+  height: 40px;
+  width: 120px;
+}
+
+#main-container #right-container {
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+}
+
+#main-container #right-container #screenshot {
+  height: 400px;
+  width: 548px;
+  margin: 120px 0px 0px 50px;
+}
