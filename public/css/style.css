@@ -31,7 +31,7 @@ body {
 }
 
 #main-container #left-container #main-logo {
-  height: 100px;
+  height: 150px;
   margin: 20px 0px 0px 75px;
 }
 
@@ -107,6 +107,7 @@ body {
   }
 
   #main-container #left-container #main-logo {
+    height: 100px;
     margin: 25px 0px 0px 0px;
   }
 
