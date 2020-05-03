@@ -11,10 +11,18 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+a {
+    text-decoration: none;
+}
+
+p a {
+    color: black;
+}
+
 #main-container {
     position: relative;
     height: 500px;
-    width: 65%;
+    width: 1000px;
     margin: 125px auto;
     /* background: black; */
     display: flex;
