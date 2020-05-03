@@ -214,7 +214,8 @@ p a {
         width: 200px;
         border: 2px solid black;
         font-family: "Roboto", sans-serif;
-        font-size: 30px;
+        font-size: 26px;
+        margin-right: 10px;
     }
     
     #label-container {
@@ -229,7 +230,7 @@ p a {
     }
     
     #license {
-        margin-left: 10px;
+        margin-left: 15px;
     }
     
     #footnote {
