@@ -1,201 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');
+
 body {
-  margin: 0px;
-  padding: 0px;
+    margin: 0px;
+    padding: 0px;
+    background: #f4f4f4;
 }
 
 *:focus {
-  outline: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #main-container {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: -webkit-linear-gradient(left, #005bea, #00c6fb);
-  background: -o-linear-gradient(left, #005bea, #00c6fb);
-  background: -moz-linear-gradient(left, #005bea, #00c6fb);
-  background: linear-gradient(left, #005bea, #00c6fb);
-  display: flex;
-  flex-direction: row;
-}
-
-#main-container #left-container {
-  height: 100%;
-  width: 50%;
-  display: inline-block;
-}
-
-#main-container #left-container .logo {
-  cursor: pointer;
-}
-
-#main-container #left-container #main-logo {
-  height: 150px;
-  margin: 20px 0px 0px 75px;
-}
-
-#main-container #left-container #description {
-  font-family: sans-serif;
-  color: white;
-  margin-left: 80px;
-}
-
-#main-container #left-container #btn-container {
-  margin: 65px 0px 0px 75px;
-}
-
-#main-container #left-container #btn-container .button {
-  margin-right: 10px;
-  cursor: pointer;
-  height: 40px;
-  background: none;
-  font-size: 15px;
-  color: white;
-  min-width: 100px;
-  border: 1px solid white;
-  border-radius: 4px;
-}
-
-#main-container #left-container #btn-container .button:hover {
-  background-color: white;
-  color: #005bea;
-}
-
-#main-container #left-container #kssbro-logo {
-  margin: 150px 0px 0px 75px;
-  height: 40px;
-  width: 120px;
-}
-
-#main-container #right-container {
-  height: 100%;
-  width: 50%;
-  display: inline-block;
-}
-
-#main-container #right-container #screenshot {
-  height: 400px;
-  width: 548px;
-  margin: 120px 0px 0px 50px;
-}
-
-@media only screen and (max-width: 1000px) {
-  #main-container {
-    background: -webkit-linear-gradient(top, #005bea, #00c6fb);
-    background: -o-linear-gradient(top, #005bea, #00c6fb);
-    background: -moz-linear-gradient(top, #005bea, #00c6fb);
-    background: linear-gradient(top, #005bea, #00c6fb);
-    display: flex;
-    flex-direction: column;
-  }
-
-  #main-container #left-container {
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-  }
-
-  #main-container #right-container {
-    display: none;
-  }
-
-  #main-container #left-container #main-logo {
-    margin: 25px 0px 0px 0px;
-  }
-
-  #main-container #left-container #description {
-    margin-left: 10px;
-    text-align: left;
-    font-size: 16px;
-  }
-
-  #main-container #left-container #btn-container {
     position: relative;
-    margin: auto;
-    top: 20px;
-    width: 250px;
-  }
-
-  #main-container #left-container #btn-container .button {
-    margin: 5px;
-    height: 40px;
-    background: none;
-    font-size: 16px;
-    color: white;
-    width: 150px;
-    border: 1px solid white;
-    border-radius: 4px;
-  }
-
-  #main-container #left-container #kssbro-logo {
-    margin: 80px 0px 0px 0px;
-    height: 40px;
-    width: 120px;
-  }
-}
-
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  body {
-    overflow-y: scroll;
-  }
-
-  #main-container {
-    background: -webkit-linear-gradient(top, #005bea, #00c6fb);
-    background: -o-linear-gradient(top, #005bea, #00c6fb);
-    background: -moz-linear-gradient(top, #005bea, #00c6fb);
-    background: linear-gradient(top, #005bea, #00c6fb);
+    height: 500px;
+    width: 65%;
+    margin: 125px auto;
+    /* background: black; */
     display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-  }
-
-  #main-container #left-container {
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-  }
-
-  #main-container #right-container {
-    display: none;
-  }
-
-  #main-container #left-container #main-logo {
-    height: 100px;
-    margin: 25px 0px 0px 0px;
-  }
-
-  #main-container #left-container #description {
-    margin-left: 10px;
-    text-align: left;
-    font-size: 16px;
-  }
-
-  #main-container #left-container #btn-container {
-    position: relative;
-    margin: auto;
-    top: 20px;
-    width: 250px;
-  }
-
-  #main-container #left-container #btn-container .button {
-    margin: 5px;
-    height: 40px;
-    background: none;
-    font-size: 16px;
-    color: white;
-    width: 150px;
-    border: 1px solid white;
-    border-radius: 4px;
-  }
-
-  #main-container #left-container #kssbro-logo {
-    margin: 80px 0px 0px 0px;
-    height: 40px;
-    width: 120px;
-  }
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+#data-container {
+    position: relative;
+    height: 500px;
+    width: 36%;
+    background: white;
+    color: black;
+}
+
+#title {
+    position: relative;
+    font-family: "Anton", sans-serif;
+    font-size: 35px;
+    letter-spacing: 10px;
+    margin: 40px 0px 0px 25px;  
+}
+
+#subtitle {
+    font-family: "Roboto", sans-serif;
+    color: grey;
+    font-size: 15px;
+    margin: 0px 0px 0px 25px;
+}
+
+#description {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin: 35px 15px 0px 25px;
+}
+
+#language {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    height: 20px;
+    width: 60px;
+    font-size: 12px;
+    color: white;
+    background: black;
+    border: 0px;
+    cursor: default;
+    margin: 10px 0px 0px 25px;
+    border-radius: 3px;
+}
+
+#btn-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 65px 0px 0px 25px;
+}
+
+.btn {
+    height: 35px;
+    width: 100px;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    /* border: 0px; */
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+#build {
+    color: grey;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin: 5px 0px 0px 25px;
+}
+
+#license {
+    margin: 5px 0px 0px 25px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: grey;
+}
+
+#footnote {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin: 70px 0px 0px 25px;
+    color: black;
+    font-weight: bold;
+}
+
+#terminal-container {
+    position: relative;
+    height: 500px;
+    width: 62%;
+    background: white;
+    color: black;
+    margin-left: 2%;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;   
+    word-wrap: break-word;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/* width */
+#terminal-container::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+#terminal-container::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+#terminal-container::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+/* Handle on hover */
+#terminal-container::-webkit-scrollbar-thumb:hover {
+    display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) { 
+    #main-container {
+        position: relative;
+        height: auto;
+        width: 80%;
+        margin: 125px auto;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    #data-container {
+        width: 100%;
+        height: 750px;
+    }
+
+    #terminal-container {
+        width: 100%;
+        height: 750px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+        font-size: 25px;
+    }
+}

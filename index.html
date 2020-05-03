@@ -1,86 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8">
     <title>Instahunter</title>
-    <link rel="stylesheet" href="public/css/style.css" type="text/css" />
-    <link
-      rel="shortcut icon"
-      href="public/images/icon_logo.png"
-      type="image/png"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="public/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="public/css/termynal.css" type="text/css"/>
+</head>
+<body>
     <div class="container" id="main-container">
-      <div class="container" id="left-container">
-        <img class="logo" id="main-logo" src="public/images/main_logo.png" />
-        <p id="description">
-          Instahunter is a CLI app that can fetch posts and user data from
-          Instagram.<br /><br />
-          Following can be fetched in the form of JSON data with
-          Instahunter:-<br /><br />
-          - Latest or Top public posts with a Hashtag <br/>- User data with a Username <br />- Most recent 
-          posts by a user with a Username <br />- Search results(Users)
-          <br />
-          <br />
-          Latest Build: v1.6.1
-        </p>
-        <div class="container" id="btn-container">
-          <a
-            href="public/bin/instahunter.exe"
-            ><input
-              class="button"
-              id="down-btn"
-              type="button"
-              value="Download (.exe)"
-          /></a>
-          <a href="https://github.com/KSSBro/instahunter"
-            ><input
-              class="button"
-              id="repo-btn"
-              type="button"
-              value="Repository"
-          /></a>
-          <a href="https://github.com/KSSBro/instahunter/archive/master.zip"
-            ><input
-              class="button"
-              id="down-src-btn"
-              type="button"
-              value="Download Source"
-          /></a>
-          <a href="https://github.com/KSSBro/instahunter/blob/master/README.md"
-            ><input class="button" id="readme-btn" type="button" value="README"
-          /></a>
+        <div class="container" id="data-container">
+            <p id="title">INSTAHUNTER</p>
+            <p id="subtitle">KSSBro/instahunter</p>
+            <p id="description">Instahunter is a CLI app that can fetch posts, user data and search results from Instagram.</p>
+            <button id="language">PYTHON</button>
+            
+            <div class="container" id="btn-container">
+                <a href="public/bin/instahunter.exe"><button class="btn" id="down-btn">DOWNLOAD</button></a>
+                <a href="https://github.com/KSSBro/instahunter"><button class="btn" id="repo-btn">REPOSITORY</button></a>
+                <a href="https://github.com/KSSBro/instahunter/blob/master/README.md"><button class="btn" id="readme-btn">README</button></a>
+            </div>
+            <p id="build">v1.6.1</p>
+            <p id="license">License: MIT</p>
+
+            <p id="footnote">MADE WITH &#10084 BY KSSBro</p>
         </div>
-        <a href="https://github.com/KSSBro"
-          ><img class="logo" id="kssbro-logo" src="public/images/kssbro.png"
-        /></a>
-      </div>
-      <div class="container" id="right-container">
-        <img
-          class="image"
-          id="screenshot"
-          alt="instahunter_in_action"
-          src="public/images/screenshot.png"
-        />
-      </div>
+        <div class="container" id="terminal-container" data-termynal>
+            <span data-ty="input">instahunter getuser -username instagram</span>
+            <span data-ty="progress"></span>
+            <span data-ty>User ID: 25025320<br/>
+                Username: instagram<br/>
+                Full Name: Instagram<br/>
+                Profile Pic URL: https://scontent-bom1-1.cdninstagram.com/v/t51.2885-19/s320x320/59381178_2348911458724961_5863612957363011584_n.jpg?_nc_ht=scontent-bom1-1.cdninstagram.com&_nc_ohc=vzDOBgXGTLIAX_Af6YT&oh=db074a6fb557fe3dca674ee7378bb0a4&oe=5ED8325B<br/>
+                Bio: Bringing you closer to the people and things you love. ❤️<br/>
+                Uploads: 6331<br/>
+                Followers: 346944419<br/>
+                Following: 76<br/>
+                Private ID: False<br/>
+                Verified ID: True<br/>
+                External URL: http://www.facebook.com/covidsupport<br/>
+                IGTV videos: 227<br/>
+                Has highlights: True<br/>
+                Done!
+            </span>
+        </div>
     </div>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-141237318-3"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-141237318-3");
-    </script>
-  </body>
+    <script src="public/js/termynal.js" data-termynal-container="#terminal-container"></script>
+</body>
 </html>
+
