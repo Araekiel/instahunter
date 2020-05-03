@@ -36,6 +36,7 @@ p a {
     width: 36%;
     background: white;
     color: black;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 #title {
@@ -99,24 +100,33 @@ p a {
     color: white;
 }
 
-#build {
-    color: grey;
+#label-container {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px 0px 25px;
+}
+
+.label {
     font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    height: 20px;
+    width: 60px;
     font-size: 14px;
-    margin: 5px 0px 0px 25px;
+    color: black;
+    background: #f2f2f2;
+    border: 0px;
+    cursor: default;
+    border-radius: 3px;
 }
 
 #license {
-    margin: 5px 0px 0px 25px;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    color: grey;
+    margin-left: 5px;
 }
 
 #footnote {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    margin: 70px 0px 0px 25px;
+    margin: 85px 0px 0px 25px;
     color: black;
     font-weight: bold;
 }
@@ -128,11 +138,11 @@ p a {
     background: white;
     color: black;
     margin-left: 2%;
-    font-size: 16px;
     font-family: "Roboto", sans-serif;   
     word-wrap: break-word;
     overflow: scroll;
     overflow-x: hidden;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 /* width */
@@ -160,7 +170,7 @@ p a {
         position: relative;
         height: auto;
         width: 80%;
-        margin: 125px auto;
+        margin: 75px auto;
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
@@ -168,14 +178,72 @@ p a {
 
     #data-container {
         width: 100%;
-        height: 750px;
+        height: 1000px;
     }
+
+    #title {
+        font-size: 70px;
+        letter-spacing: 20px;
+        margin: 70px 0px 0px 50px;  
+    }
+    
+    #subtitle {
+        font-size: 30px;
+        margin: 0px 0px 0px 50px;
+    }
+    
+    #description {
+        font-size: 32px;
+        margin: 70px 40px 0px 50px;
+    }
+    
+    #language {
+        height: 40px;
+        width: 120px;
+        font-size: 24px;
+        margin: 20px 0px 0px 50px;
+        border-radius: 3px;
+    }
+    
+    #btn-container {
+        margin: 130px 0px 0px 50px;
+    }
+    
+    .btn {
+        height: 70px;
+        width: 200px;
+        border: 2px solid black;
+        font-family: "Roboto", sans-serif;
+        font-size: 30px;
+    }
+    
+    #label-container {
+        margin: 30px 0px 0px 50px;
+    }
+    
+    .label {
+        height: 40px;
+        width: 120px;
+        font-size: 28px;
+        border-radius: 6px;
+    }
+    
+    #license {
+        margin-left: 10px;
+    }
+    
+    #footnote {
+        font-family: "Roboto", sans-serif;
+        font-size: 28px;
+        margin: 190px 0px 0px 50px;
+    }
+
 
     #terminal-container {
         width: 100%;
-        height: 750px;
+        height: 500px;
         margin-left: 0px;
         margin-bottom: 50px;
-        font-size: 25px;
+        font-size: 24px;
     }
 }

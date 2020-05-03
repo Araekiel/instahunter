@@ -17,7 +17,6 @@
     max-width: 100%;
     background: var(--color-bg);
     color: var(--color-text);
-    font-size: 16px;
     font-family: 'Fira Mono',  monospace;
     border-radius: 4px;
     padding: 75px 45px 35px;
@@ -53,27 +52,32 @@
 [data-ty] {
     display: block;
     line-height: 2;
+    font-size: 16px;
+}
+
+[data-ty="output"] {
+    font-size: 16px;
 }
 
 [data-ty]:before {
-    /* Set up defaults and ensure empty lines are displayed. */
     content: '';
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: middle;   
 }
 
 [data-ty="input"]:before,
 [data-ty-prompt]:before {
     margin-right: 0.75em;
-    color: var(--color-text-subtle);
+    color: var(--color-text-subtle); 
 }
 
 [data-ty="input"]:before {
     content: '$';
+    font-size: 15px;
 }
 
 [data-ty][data-ty-prompt]:before {
-    content: attr(data-ty-prompt);
+    content: attr(data-ty-prompt);   
 }
 
 [data-ty-cursor]:after {
@@ -98,3 +102,18 @@
         opacity: 0;
     }
 }
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    [data-ty] {
+        font-size: 22px;
+    }
+
+    [data-ty="input"]:before {
+        font-size: 20px;
+    }
+
+    [data-ty="output"] {
+        font-size: 11px;
+    }
+ }
