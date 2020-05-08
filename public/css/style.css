@@ -24,7 +24,6 @@ p a {
     height: 500px;
     width: 1000px;
     margin: 125px auto;
-    /* background: black; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -89,7 +88,6 @@ p a {
     color: black;
     background: white;
     border: 1px solid black;
-    /* border: 0px; */
     font-family: "Roboto", sans-serif;
     font-size: 13px;
     font-weight: bold;
@@ -146,22 +144,18 @@ p a {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
-/* width */
 #terminal-container::-webkit-scrollbar {
     width: 10px;
 }
-  
-/* Track */
+
 #terminal-container::-webkit-scrollbar-track {
     background: white;
 }
 
-/* Handle */
 #terminal-container::-webkit-scrollbar-thumb {
     background: black;
 }
 
-/* Handle on hover */
 #terminal-container::-webkit-scrollbar-thumb:hover {
     display: none;
 }

@@ -88,9 +88,6 @@
             animation: blink 1s infinite;
 }
 
-
-/* Cursor animation */
-
 @-webkit-keyframes blink {
     50% {
         opacity: 0;
